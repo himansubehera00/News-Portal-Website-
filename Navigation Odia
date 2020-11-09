@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ହୋମ୍</title>
+	<link rel="stylesheet" type="text/css" href="navig.css">
+	<style>
+		.grid-container{display:grid;grid-template-areas: 
+			'h1 h2 h3 h4'
+			'h5 h6 h7 h8';
+			grid-gap:1px;
+			padding: 5px;
+			background: transparent;
+			height:250px;
+			width: 270px; }
+			.grid-container>div{
+				height: 210px;
+				width: 270px;
+				background-color: transparent;
+				text-align: center;
+				padding:2px;
+				font-size:10px;
+				border-radius: 20px;
+			}
+			.item1{grid-area: h1}
+			.item2{grid-area: h2}
+			.item3{grid-area: h3}
+			.item4{grid-area: h4}
+			.item5{grid-area: h5;font-size: 20px;text-decoration:none;}
+			.item6{grid-area: h6;font-size: 20px;text-decoration:none;}
+			.item7{grid-area: h7;font-size: 20px;text-decoration:none;}
+			.item8{grid-area: h8;font-size: 20px;text-decoration:none;}
+
+	</style>
+	<script type="text/javascript">
+    window.onload = setInterval(clock,1000);
+
+    function clock()
+    {
+      var d = new Date();
+      
+      var date = d.getDate();
+      
+      var month = d.getMonth();
+      var montharr =["Jan","Feb","Mar","April","May","June","July","Aug","Sep","Oct","Nov","Dec"];
+      month=montharr[month];
+      
+      var year = d.getFullYear();
+      
+      var day = d.getDay();
+      var dayarr =["Sun","Mon","Tues","Wed","Thurs","Fri","Sat"];
+      day=dayarr[day];
+      
+      var hour =d.getHours();
+      var min = d.getMinutes();
+      var sec = d.getSeconds();
+    if (hour<10) {hour="0"+hour};
+    if (min<10) {min="0"+min};
+    if (sec<10) {sec="0"+sec};
+      document.getElementById("date").innerHTML=day+" "+date+" "+month+" "+year;
+      document.getElementById("time").innerHTML=hour+":"+min+":"+sec;
+    }
+  </script>
+</head>
+<body>
+	<div style="margin: 0px; background-color: brown; height: 50px; width: cover;" class="right">&nbsp;&nbsp;<center><div style="background-color: brown; height: 50px; width: 458px" class="head">
+		The Sunrise<sup>&reg;</sup>
+	</div></center>
+		</div>
+	<ul>
+		<li class="active" ><a href="navig.html">Home</a></li>
+		<li><a href="bolglogin.html"target="_blank">Blog</a></li>
+		<li><a href="about.html"target="_blank">About</a></li>
+		<li><a href="suncontact.html"target="_blank">Contact</a></li>
+		<li class="log"><a href="bolglogin.html"target="_blank">Login/Sign Up</a></li>
+	</ul><hr>
+		<marquee style="color: red;width: cover;"onmouseover="this.stop()"onmouseout="this.start()">
+   	<a href="ab.com" style="color: red">COVID 19 Update: World	46,525,182	|	USA	9,405,247 | India	8,196,332 | Brazil	5,535,605 | Russia	1,636,781 | France	1,367,625 | Spain	1,264,517	| Argentina	1,166,924 | Colombia	1,074,184 | UK	1,011,660 | Mexico	924,962	 | Peru	902,503 | South Africa	725,452	 | Italy	679,430 | Iran	620,491 | Germany	534,315 | Chile	510,256	 | Iraq	475,288	 | 	Belgium	429,229 | Indonesia	412,784 | 	Bangladesh	409,252	 | Ukraine	395,440 | Philippines	383,113 | Poland	379,902 | Turkey	375,367	 | Netherlands	359,861	</a>
+ </marquee>
+<hr>
+ 	<div style="float: right;margin-right: 10px;width: 200px">
+         	<label for="language">Change Language</label><br>
+            <a href="navig.html"><u>
+English</u></a> | 
+            <a href="navighindi.html"><u>हिंदी</u></a>
+            <br>
+      <br><br><div style="border:0px solid black;text-align: center;padding: 0px;background-color:#f2ebeb;"><div style="float: left;margin-left: 3px;margin-top: 3px; border:0px solid black;box-shadow: 2px 0 5px 0 rgba(0,0,0,0.5);border-radius: 3px">Ad</div><br><img src="Appypie.png"><br><p class="blink">Try Appy pie for Free</p></div>
+        </div>
+       <div style="padding: 1px;border:0px; width: 1100px;height: 35px;font-family: Copperplate Gothic Bold;background-color: #eb4034;color: white;border-radius: 20px"><p class="bli">
+       	Breaking News</p>
+       </div>
+       <div class="grid-container">
+       	<div class="zoom"><div class="item1"><img src="imrankhan.jpg" class="imge"></div>
+       	<div class="item5"><a href="#">'ବେଆଇନ ଦଖଲକୁ କାମୁଫ୍ଲେଜ୍ କରିବାକୁ ବିଡ୍': ଗିଲ୍ଗିଟ୍-ବାଲ୍ଟିସ୍ତାନର ସ୍ଥିତିକୁ ବଦଳାଇବା ପାଇଁ ପାକ୍ଙ୍କ ପଦକ୍ଷେପକୁ ଭାରତ ନିନ୍ଦା କରିଛି</a></div>
+       </div>
+       <div class="zoom"><div class="item2"><img src="ppekit.jpg" class="imge"></div>
+       <div class="item6"><a href="#">ମୁମ୍ବାଇ: 244 ସ୍ଥାନରେ ମାଗଣା କୋଭିଡ ପରୀକ୍ଷା |</a></div>
+   </div>
+	<div class="zoom">
+		<div class="item3"><img src="handcup.jpg" class="imge"></div>
+		<div class="item7"><a href="#">ହାଇଦ୍ରାବାଦ: ପରିବହନ ସମୟରେ ଡବ୍ବାକ୍ ବିଜେପି ପ୍ରାର୍ଥୀଙ୍କ ସମ୍ପର୍କୀୟମାନେ ...</a></div>
+	</div>
+	<div class="zoom">
+	<div class="item4"><img src="smriti.jpg" class="imge"></div>
+	<div class="item8"><a href="#">କେନ୍ଦ୍ର ମନ୍ତ୍ରୀ ସ୍ମୃତି ଇରାନୀ କୋଭିଡ -19 ପାଇଁ ସକରାତ୍ମକ ପରୀକ୍ଷା କରିଛନ୍ତି</a></div>
+	</div>
+</div>
+		<img src="biden.jpg" class="imge">
+		<p>ନିର୍ବାଚନ ଦିନ ପାଖେଇ ଆସୁଥିବାରୁ ରାଜନୀତି ପଡୋଶୀ ଦେଶ ବିରୁଦ୍ଧରେ ପଡ଼ୁଛି
+ସମଗ୍ର ଯୁକ୍ତରାଷ୍ଟ୍ରରେ ରାଜନ political ତିକ ସଙ୍କେତ ପୋଡି ପାଉଁଶ ହୋଇଯାଇଛି, କାରଗୁଡିକ ଭଙ୍ଗାରୁଜା କରାଯାଇଛି ଏବଂ ଅର୍ଦ୍ଧ ଶତାବ୍ଦୀରୁ <br> ଅଧିକ ବିଷାକ୍ତ ନିର୍ବାଚନ season ତୁରେ ପାଟିତୁଣ୍ଡ ମ୍ୟାଚ୍ ବୃଦ୍ଧି ପାଇଛି।
+ଆନି ଗୋଏନ୍ ଏବଂ ଟିମ୍ କ୍ରେଗ୍ ଙ୍କ ଦ୍ .ାରା |</p>
+
+<img src="karen.png" class="imge">
+		<p>ଫିଲାଡେଲଫିଆରେ ଏକ ସପ୍ତାହ: ଏକ ମୃତ୍ୟୁ, ବିରୋଧ, ମହାମାରୀ ଏବଂ ନିର୍ବାଚନ ମାୟାମ୍ |
+ପେନସିଲଭାନିଆର ଯୁଦ୍ଧକ୍ଷେତ୍ରର ସବୁଠାରୁ ବଡ ସହର ଯେଉଁଠାରେ 2020 ର ସମସ୍ୟା ଏବଂ ଭୂତମାନେ ସମ୍ପୂର୍ଣ୍ଣ ପ୍ରଦର୍ଶନ କରିଥିଲେ | <br>
+କରିନା ହେଲର୍ ଙ୍କ ଦ୍ .ାରା |</p>
+
+<img src="sikh.png" class="imge">
+		<p>'ଶିଖ ପ୍ୟାର' ନାମରେ ପରିଚିତ ଶିଖ ପବିତ୍ର ପୁରୁଷମାନେ ଚତୁର୍ଥ ଶିଖ ଗୁରୁଙ୍କ ଜନ୍ମ ବାର୍ଷିକୀ ପୂର୍ବରୁ ଏକ ଧାର୍ମିକ ଶୋଭାଯାତ୍ରାରେ ଶିଖ ଧର୍ମର କେନ୍ଦ୍ରୀୟ ଧାର୍ମିକ ପାଠ ଗୁରୁ ଗ୍ରନ୍ଥ ସାହିବଙ୍କୁ ନେଇ ଶିଖ୍ ପୁରୋହିତ ଜଗତର ସିଂ (ସି)<br> ଙ୍କୁ ନେଇ ଯାଉଥିଲେ। ଅକ୍ଟୋବର 31, 2020 ରେ ଅମୃତସରର ସୁବର୍ଣ୍ଣ ମନ୍ଦିରରେ ରାମଦାସ। ଚତୁର୍ଥ ଶିଖ ଗୁରୁ ଆରଙ୍କ ଜନ୍ମ ବାର୍ଷିକୀ ପୂର୍ବରୁ ଏକ ଧାର୍ମିକ ଶୋଭାଯାତ୍ରାରେ ଶିଖ ଭକ୍ତମାନେ ଶିଖ ଧର୍ମର କେନ୍ଦ୍ରୀୟ ଧାର୍ମିକ ପାଠ୍ୟ <br> ଗୁରୁ ଗ୍ରନ୍ଥ ସାହେବଙ୍କ ସହ ପାଲ୍କି ସାହିବ ନେଇଥାନ୍ତି। </p>
+
+<img src="jem.png" class="imge">
+		<p>ଜାମ୍ମୁ କାଶ୍ମୀରର ବୁଦ୍ଧଗାମ ଜିଲ୍ଲାରେ ହୋଇଥିବା ଏକ ଏନକାଉଣ୍ଟରରେ ଜ ish ଶ-ଏ-ମହମ୍ମଦ (ଜେଏମ) ର ଅତି କମରେ ଦୁଇଜଣ ଆତଙ୍କବାଦୀ ନିହତ ହୋଇଥିଲେ। ଆତଙ୍କବାଦୀ ଏବଂ ସୁରକ୍ଷା ବାହିନୀ ମଧ୍ୟରେ ଗୁଳି ବିନିମୟ <br> ମଙ୍ଗଳବାର ଦିନ ବୁଡଗାମର ମୋଚୱା ଅଞ୍ଚଳରେ ଆରମ୍ଭ ହୋଇଥିଲା। ପୋଲିସର ସୂଚନାନୁସାରେ, ଏନକାଉଣ୍ଟର ସ୍ଥାନରୁ ଦୁଇ ଆତଙ୍କବାଦୀଙ୍କ ମୃତଦେହ ଉଦ୍ଧାର କରାଯାଇଛି ଏବଂ ସେଠାରୁ ପଳାଇଥିବା ଲୋକଙ୍କ ପାଇଁ ସର୍ଚ୍ଚ <br> ଅପରେସନ କରାଯାଇଛି। ଗୁଳି ବିନିମୟ ଆରମ୍ଭ ହେବା ପୂର୍ବରୁ ଶ୍ରୀନଗର ପୋଲିସ, ବୁଡଗାମ ପୋଲିସ ଏବଂ ସେନାର 50 ରାଷ୍ଟ୍ରିୟ ରାଇଫଲ୍ସ ମିଳିତ ମିଳିତ ଟିମ୍</p>
+
+<img src="us.png" class="imge">
+		<p>ଆମେରିକା ରାଷ୍ଟ୍ରପତି ଡୋନାଲ୍ଡ ଟ୍ରମ୍ପଙ୍କ ଅନୁଯାୟୀ ଚୀନ୍ ଏବଂ Russia ଷ ସମେତ ସାମରିକ ପ୍ରତିଦ୍ୱନ୍ଦ୍ୱୀଙ୍କୁ ପଛରେ ପକାଇବା ପାଇଁ ଆମେରିକା ଏକ 'ସୁପର ଡୁପର କ୍ଷେପଣାସ୍ତ୍ର' ବିକଶିତ କରୁଛି।</p>	
+		<div style="background-color: white;height: 50px"></div>
+        <div class="footer">
+        		<div style="float: right;padding: 5px; border:0px solid black;height: 90px;width: 192px;color: white;background-color: #eb4034;font-family: Arial Rounded MT Bold;font-size: 18px;font-weight: bold; border-radius: 20px"><center>
+   <p id="date"></p>
+   	<p id="time"></p></center>
+</div>
+        	<marquee style="background-color: white; color: pink;width: cover"onmouseover="this.stop()"onmouseout="this.start()">
+   	<a href="ab.com" style="color: red">STOCK UPDATE: NIFTY- 50	11642.40	-28.40	-0.24 |
+SENSEX-	39614.07	-135.78	-0.34 |
+NIFTY BANK-	23900.90	-191.10	-0.79 | 
+NIFTY IT-	20916.85	39.85	0.19 | 
+S&P BSE Smallcap-	14888.08	-5.01	-0.03</a>
+ </marquee>
+        </div>
+</body>
+</html>
