@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>होम</title>
+	<link rel="stylesheet" type="text/css" href="navig.css">
+	<style>
+		.grid-container{display:grid;grid-template-areas: 
+			'h1 h2 h3 h4'
+			'h5 h6 h7 h8';
+			grid-gap:1px;
+			padding: 5px;
+			background: transparent;
+			height:230px;
+			width: 270px; }
+			.grid-container>div{
+				height: 210px;
+				width: 270px;
+				background-color: transparent;
+				text-align: center;
+				padding:2px;
+				font-size:10px;
+				border-radius: 20px;
+			}
+			.item1{grid-area: h1}
+			.item2{grid-area: h2}
+			.item3{grid-area: h3}
+			.item4{grid-area: h4}
+			.item5{grid-area: h5;font-size: 20px;text-decoration:none;}
+			.item6{grid-area: h6;font-size: 20px;text-decoration:none;}
+			.item7{grid-area: h7;font-size: 20px;text-decoration:none;}
+			.item8{grid-area: h8;font-size: 20px;text-decoration:none;}
+
+	</style>
+	<script type="text/javascript">
+    window.onload = setInterval(clock,1000);
+
+    function clock()
+    {
+      var d = new Date();
+      
+      var date = d.getDate();
+      
+      var month = d.getMonth();
+      var montharr =["Jan","Feb","Mar","April","May","June","July","Aug","Sep","Oct","Nov","Dec"];
+      month=montharr[month];
+      
+      var year = d.getFullYear();
+      
+      var day = d.getDay();
+      var dayarr =["Sun","Mon","Tues","Wed","Thurs","Fri","Sat"];
+      day=dayarr[day];
+      
+      var hour =d.getHours();
+      var min = d.getMinutes();
+      var sec = d.getSeconds();
+    if (hour<10) {hour="0"+hour};
+    if (min<10) {min="0"+min};
+    if (sec<10) {sec="0"+sec};
+      document.getElementById("date").innerHTML=day+" "+date+" "+month+" "+year;
+      document.getElementById("time").innerHTML=hour+":"+min+":"+sec;
+    }
+  </script>
+</head>
+<body>
+	<<div style="margin: 0px; background-color: brown; height: 50px; width: cover;" class="right">&nbsp;&nbsp;<center><div style="background-color: brown; height: 50px; width: 458px" class="head">
+		The Sunrise<sup>&reg;</sup>
+	</div></center>
+		</div>
+	<ul>
+		<li class="active" ><a href="navig.html">Home</a></li>
+		<li><a href="bolglogin.html"target="_blank">Blog</a></li>
+		<li><a href="about.html"target="_blank">About</a></li>
+		<li><a href="suncontact.html"target="_blank">Contact</a></li>
+		<li class="log"><a href="bolglogin.html"target="_blank">Login/Sign Up</a></li>
+	</ul><hr>
+		<marquee style="color: red;width: cover;"onmouseover="this.stop()"onmouseout="this.start()">
+   	<a href="ab.com" style="color: red">COVID 19 Update: World	46,525,182	|	USA	9,405,247 | India	8,196,332 | Brazil	5,535,605 | Russia	1,636,781 | France	1,367,625 | Spain	1,264,517	| Argentina	1,166,924 | Colombia	1,074,184 | UK	1,011,660 | Mexico	924,962	 | Peru	902,503 | South Africa	725,452	 | Italy	679,430 | Iran	620,491 | Germany	534,315 | Chile	510,256	 | Iraq	475,288	 | 	Belgium	429,229 | Indonesia	412,784 | 	Bangladesh	409,252	 | Ukraine	395,440 | Philippines	383,113 | Poland	379,902 | Turkey	375,367	 | Netherlands	359,861	</a>
+ </marquee>
+<hr>
+ 	<div style="float: right;margin-right: 10px;width: 200px">
+         	<label for="language">Change Language</label><br>
+            <a href="navig.html"><u>
+English</u></a> | 
+            <a href="navigodia.html"><u>ଓଡିଆ</u></a>
+            <br>
+      <br><br><div style="border:0px solid black;text-align: center;padding: 0px;background-color:#f2ebeb;"><div style="float: left;margin-left: 3px;margin-top: 3px; border:0px solid black;box-shadow: 2px 0 5px 0 rgba(0,0,0,0.5);border-radius: 3px">Ad</div><br><img src="Appypie.png"><br><p class="blink">Try Appy pie for Free</p></div>
+        </div>
+       <div style="padding: 1px;border:0px; width: 1100px;height: 35px;font-family: Copperplate Gothic Bold;background-color: #eb4034;color: white;border-radius: 20px"><p class="bli">
+       	Breaking News</p>
+       </div>
+       <div class="grid-container">
+       	<div class="zoom"><div class="item1"><img src="imrankhan.jpg" class="imge"></div>
+       	<div class="item5"><a href="#">
+'अवैध कब्जे के लिए बोली': गिलगित-बाल्टिस्तान की स्थिति को बदलने के लिए भारत ने पाक के कदम को खारिज कर दिया</a></div>
+       </div>
+       <div class="zoom"><div class="item2"><img src="ppekit.jpg" class="imge"></div>
+       <div class="item6"><a href="#">मुंबई: 244 स्थानों पर नि: शुल्क कोविद परीक्षण</a></div>
+   </div>
+	<div class="zoom">
+		<div class="item3"><img src="handcup.jpg" class="imge"></div>
+		<div class="item7"><a href="#">हैदराबाद: डबक बीजेपी के उम्मीदवार के परिजनों ने परिवहन के दौरान मारपीट की ...</a></div>
+	</div>
+	<div class="zoom">
+	<div class="item4"><img src="smriti.jpg" class="imge"></div>
+	<div class="item8"><a href="#">केंद्रीय मंत्री स्मृति ईरानी ने कोविद -19 के लिए सकारात्मक परीक्षण किया</a></div>
+	</div>
+</div>
+		<img src="biden.jpg" class="imge">
+		<p>पॉलिटिक्स डे लूम के रूप में पड़ोसी के खिलाफ राजनीति गड्ढे
+संयुक्त राज्य अमेरिका के उस पार, राजनीतिक संकेतों को तोड़ दिया गया है, कारों में बर्बरता की गई है और आधी सदी से भी <br> अधिक समय में सबसे जहरीले चुनावी मौसम के विनाशकारी दिनों में माचिस की तीली को हिलाया गया है।
+एनी गोवेन और टिम क्रेग द्वारा</p>
+
+<img src="karen.png" class="imge">
+		<p>फिलाडेल्फिया में एक सप्ताह: एक मौत, विरोध, महामारी और चुनाव तबाही
+पेंसिल्वेनिया के युद्ध के मैदान का सबसे बड़ा शहर है जहां 2020 के मुद्दे और राक्षस पूर्ण प्रदर्शन पर थे। <br>
+करेन हेलर द्वारा</p>
+
+<img src="sikh.png" class="imge">
+		<p>सिख पवित्र पुरुषों, जिन्हें 'पंज प्यारे' के नाम से जाना जाता है, वे सिख पुजारी जगतार सिंह (सी) को गुरु ग्रंथ साहिब, सिख धर्म के केंद्रीय धार्मिक पाठ, चौथे सिख गुरु की जयंती के आगे एक <br> धार्मिक जुलूस के दौरान ले जाने के लिए तलवारें चलाते हैं। रामदास, 31 अक्टूबर, 2020 को अमृतसर के स्वर्ण मंदिर में। सिख श्रद्धालु, चौथे सिख गुरु रामदास की जयंती से पहले एक धार्मिक <br>जुलूस के दौरान, सिख धर्म के केंद्रीय धार्मिक पाठ, गुरु ग्रंथ साहिब के साथ पालकी साहिब ले जाते हैं। अमृतसर में स्वर्ण मंदिर</p>
+
+<img src="jem.png" class="imge">
+		<p>जम्मू-कश्मीर के बडगाम जिले में एक मुठभेड़ में जैश-ए-मोहम्मद (JeM) के कम से कम दो आतंकवादी मारे गए। बडगाम के मोचवा इलाके में मंगलवार को आतंकवादियों और सुरक्षा बलों <br> के बीच गोलीबारी शुरू हो गई। पुलिस के मुताबिक, मुठभेड़ स्थल से दो आतंकवादियों के शव बरामद किए गए और जो लोग वहां से भाग गए, उनके लिए तलाशी अभियान चलाया गया है। <br> गोलाबारी शुरू होने से पहले श्रीनगर पुलिस, बडगाम पुलिस और सेना की 50 राष्ट्रीय राइफल्स की एक संयुक्त टीम ने आतंकवादियों को चेतावनी दी और उन्हें आत्मसमर्पण करने के लिए कहा। <br> जैसे ही सुरक्षाकर्मी उनके पास पहुंचे, आतंकियों ने अंधाधुंध गोलियां चला दीं। जवाबी कार्रवाई में सुरक्षा बलों ने दो आतंकवादियों को मार गिराया। इस सप्ताह की यह दूसरी मुठभेड़ है, इससे <br> पहले, एक आतंकवादी मंगलवार को बेअसर हो गया था, जबकि एक अन्य ने दक्षिण कश्मीर के त्राल क्षेत्र में आत्मसमर्पण कर दिया था।</p>
+
+<img src="us.png" class="imge">
+		<p>अमेरिकी राष्ट्रपति डोनाल्ड ट्रम्प के अनुसार, चीन और रूस सहित सैन्य प्रतिद्वंद्वियों को पछाड़ने के लिए अमेरिका एक 'सुपर डुपर मिसाइल' विकसित कर रहा है।</p>	
+		<div style="background-color: white;height: 50px"></div>
+        <div class="footer">
+        		<div style="float: right;padding: 5px; border:0px solid black;height: 90px;width: 192px;color: white;background-color: #eb4034;font-family: Arial Rounded MT Bold;font-size: 18px;font-weight: bold; border-radius: 20px"><center>
+   <p id="date"></p>
+   	<p id="time"></p></center>
+</div>
+        	<marquee style="background-color: white; color: pink;width: cover"onmouseover="this.stop()"onmouseout="this.start()">
+   	<a href="ab.com" style="color: red">STOCK UPDATE: NIFTY- 50	11642.40	-28.40	-0.24 |
+SENSEX-	39614.07	-135.78	-0.34 |
+NIFTY BANK-	23900.90	-191.10	-0.79 | 
+NIFTY IT-	20916.85	39.85	0.19 | 
+S&P BSE Smallcap-	14888.08	-5.01	-0.03</a>
+ </marquee>
+        </div>
+</body>
+</html>
