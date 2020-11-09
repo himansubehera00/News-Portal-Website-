@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up</title>
+	<link rel="stylesheet" type="text/css" href="navig.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<style>
+		.one{font-family:Arial Rounded MT Bold; font-size: 27px;text-align: center;margin-bottom: 5px;margin-top: 5px}
+		.two{font-family: Arial Rounded MT Bold;font-size: 15px; text-align: center;margin-top: 0px}
+		.thr{width: 238.5px;height: 30px;margin-left: 10px;margin-right: 6px; box-shadow: 2px 0 5px 0 rgba(0,0,0,0.5);border-radius: 3px;}
+		.four{width: 505px;height: 30px;margin-left: 10px;margin-right: 5px; box-shadow: 2px 0 5px 0 rgba(0,0,0,0.5);border-radius: 3px}
+		.five{height: 30px;width: 80px;border-radius: 8px;background-color: transparent;margin-left: 10px}
+		.sev{height: 470px;width: 535px;margin-left: 400px;background-color:#e36b52;border-radius: 18px
+		}
+		.eig{
+			float: right;
+	font-family: Berlin Sans FB;
+	font-size: 20px;background-color: black;
+		}
+	</style>
+	<script type="text/javascript">
+    window.onload = setInterval(clock,1000);
+
+    function clock()
+    {
+      var d = new Date();
+      
+      var date = d.getDate();
+      
+      var month = d.getMonth();
+      var montharr =["Jan","Feb","Mar","April","May","June","July","Aug","Sep","Oct","Nov","Dec"];
+      month=montharr[month];
+      
+      var year = d.getFullYear();
+      
+      var day = d.getDay();
+      var dayarr =["Sun","Mon","Tues","Wed","Thurs","Fri","Sat"];
+      day=dayarr[day];
+      
+      var hour =d.getHours();
+      var min = d.getMinutes();
+      var sec = d.getSeconds();
+    if (hour<10) {hour="0"+hour};
+    if (min<10) {min="0"+min};
+    if (sec<10) {sec="0"+sec};
+      document.getElementById("date").innerHTML=day+" "+date+" "+month+" "+year;
+      document.getElementById("time").innerHTML=hour+":"+min+":"+sec;
+    }
+  </script>
+</head>
+<body>
+	<div style="margin: 0px; background-color: brown; height: 50px; width: cover;" class="right">&nbsp;&nbsp;<center><div style="background-color: brown; height: 50px; width: 458px" class="head">
+		The Sunrise<sup>&reg;</sup>
+	</div></center>
+		</div>
+	<ul>
+		<li><a href="navig.html">Home</a></li>
+		<li><a href="bolglogin.html">Blog</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="suncontact.html">Contact</a></li>
+		<li class="eig"><a href="bolglogin.html">Login/Sign Up</a></li>
+	</ul><hr>
+	<marquee style="color: red;width: cover;"onmouseover="this.stop()"onmouseout="this.start()">
+   	<a href="ab.com" style="color: red">COVID 19 Update: World	46,525,182	|	USA	9,405,247 | India	8,196,332 | Brazil	5,535,605 | Russia	1,636,781 | France	1,367,625 | Spain	1,264,517	| Argentina	1,166,924 | Colombia	1,074,184 | UK	1,011,660 | Mexico	924,962	 | Peru	902,503 | South Africa	725,452	 | Italy	679,430 | Iran	620,491 | Germany	534,315 | Chile	510,256	 | Iraq	475,288	 | 	Belgium	429,229 | Indonesia	412,784 | 	Bangladesh	409,252	 | Ukraine	395,440 | Philippines	383,113 | Poland	379,902 | Turkey	375,367	 | Netherlands	359,861	</a>
+ </marquee>
+<hr>	<div style="height: 475px;width: 1320px;border: 0px solid black;display: flex;">
+	<div style="border: 0px solid black">
+		<form action="bolglogin.html">
+		<div class="sev">&nbsp;
+			<p class="one">Sign Up here</p>&nbsp;
+			<p class="two">Please sign up for accessing the blog content.</p>
+			<input type="text" name="username" class="thr" placeholder="First Name" required>
+			<input type="text" name="username" class="thr" placeholder="Last Name" ><br><br>
+			<input type="email" name="email" class="four" placeholder="Email" required><br><br>
+			<input type="text" name="username" maxlength="10" class="four"placeholder="Phone Number"required><br><br>
+			<input type="password" name="password"class="thr" placeholder="Password"required >
+			<input type="password" name="password" class="thr" placeholder="Confirm Password"required><br><br>
+			<input type="checkbox" id="Privacy" name="Privacy" required value="Privacy"style="margin-left: 12px">I accept the<a href="#"style="color: black; font-size: 18px" > <u>Terms of Use</u></a> & <a href="#" style="color: black;font-size: 18px"><u>Privacy Policy</u></a><br><br>
+			<input type="Submit" name="Submit" value="Submit" class="five">
+			</div>
+		</form></div>
+				<div style="border: 0px solid black;width: 400px">
+				<div style="padding: 5px; border:0px solid black;height: 90px;width: 192px;color: white;background-color: #eb4034;font-family: Arial Rounded MT Bold;font-size: 18px; border-radius: 20px;font-weight: bold; position: absolute;right:0.5cm;bottom: 0.8cm">
+        			<center>
+        				<p id="date"></p>
+   						<p id="time"></p>
+   					</center>
+				</div>
+				</div>
+			</div>
+
+		<div class="footer">	
+       <div>
+        	<marquee style="background-color: white; color: pink;width: cover"onmouseover="this.stop()"onmouseout="this.start()">
+   	<a href="ab.com" style="color: red">STOCK UPDATE: NIFTY- 50	11642.40	-28.40	-0.24 |
+SENSEX-	39614.07	-135.78	-0.34 |
+NIFTY BANK-	23900.90	-191.10	-0.79 | 
+NIFTY IT-	20916.85	39.85	0.19 | 
+S&P BSE Smallcap-	14888.08	-5.01	-0.03</a>
+ </marquee></div>
+        </div>
+</body>
+</html>
