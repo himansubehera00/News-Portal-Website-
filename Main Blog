@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>blog</title>
+	<link rel="stylesheet" type="text/css" href="navig.css">
+	<style>
+		.grid-container{display:grid;grid-template-areas: 
+			'h1 h2'
+			'h3 h4'
+			'h5 h6'
+			'h7 h8'
+			'h9 h10';
+			grid-gap:20px;
+			padding: 10px;
+			background: transparent;
+			height:200px;
+			width: 270px; }
+			.grid-container>div{
+				height: 190px;
+				width: 1100px;
+				background-color: #e82c2c;
+				text-align: center;
+				padding:2px;
+				font-size:10px;
+				border-radius: 20px;
+				display: flex;
+			}
+			.item1{grid-area: h1;margin-left: 15px}
+			.item2{grid-area: h2;height: 200px;width: 888px; font-size: 18px;margin-left: 25px;color: white;margin-top: 1px; text-decoration:none;text-align: left;}
+			.item3{grid-area: h3;margin-left: 15px}
+			.item4{grid-area: h4;height: 200px;width: 888px; font-size: 18px;margin-left: 25px;color: white;margin-top: 1px; text-decoration:none;text-align: left;}
+			.item5{grid-area: h5;margin-left: 15px}
+			.item6{grid-area: h6;height: 200px;width: 888px; font-size: 18px;margin-left: 25px;color: white;margin-top: 1px; text-decoration:none;text-align: left;}
+			.item7{grid-area: h7;margin-left: 15px}
+			.item8{grid-area: h8;height: 200px;width: 888px; font-size: 18px;margin-left: 25px;color: white;margin-top: 1px; text-decoration:none;text-align: left;}
+			.item9{grid-area: h9;margin-left: 15px}
+			.item10{grid-area: h10;height: 200px;width: 888px; font-size: 18px;margin-left: 25px;color: white;margin-top: 1px; text-decoration:none;text-align: left;}
+
+
+	</style>
+	<script type="text/javascript">
+    window.onload = setInterval(clock,1000);
+
+    function clock()
+    {
+      var d = new Date();
+      
+      var date = d.getDate();
+      
+      var month = d.getMonth();
+      var montharr =["Jan","Feb","Mar","April","May","June","July","Aug","Sep","Oct","Nov","Dec"];
+      month=montharr[month];
+      
+      var year = d.getFullYear();
+      
+      var day = d.getDay();
+      var dayarr =["Sun","Mon","Tues","Wed","Thurs","Fri","Sat"];
+      day=dayarr[day];
+      
+      var hour =d.getHours();
+      var min = d.getMinutes();
+      var sec = d.getSeconds();
+    if (hour<10) {hour="0"+hour};
+    if (min<10) {min="0"+min};
+    if (sec<10) {sec="0"+sec};
+      document.getElementById("date").innerHTML=day+" "+date+" "+month+" "+year;
+      document.getElementById("time").innerHTML=hour+":"+min+":"+sec;
+    }
+  </script>
+</head>
+<body>
+	<div style="margin: 0px; background-color: brown; height: 50px; width: cover;" class="right">&nbsp;&nbsp;<center><div style="background-color: brown; height: 50px; width: 458px" class="head">
+		The Sunrise<sup>&reg;</sup>
+	</div></center>
+		</div>
+	<ul>
+		<li><a href="navig.html">Home</a></li>
+		<li class="active"><a href="bolglogin.html">Blog</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="suncontact.html">Contact</a></li>
+		<li class="log"><a href="bolglogin.html">Login/Sign Up</a></li>
+	</ul><hr>
+	<marquee style="color: red;width: cover;"onmouseover="this.stop()"onmouseout="this.start()">
+   	<a href="ab.com" style="color: red">COVID 19 Update: World	46,525,182	|	USA	9,405,247 | India	8,196,332 | Brazil	5,535,605 | Russia	1,636,781 | France	1,367,625 | Spain	1,264,517	| Argentina	1,166,924 | Colombia	1,074,184 | UK	1,011,660 | Mexico	924,962	 | Peru	902,503 | South Africa	725,452	 | Italy	679,430 | Iran	620,491 | Germany	534,315 | Chile	510,256	 | Iraq	475,288	 | 	Belgium	429,229 | Indonesia	412,784 | 	Bangladesh	409,252	 | Ukraine	395,440 | Philippines	383,113 | Poland	379,902 | Turkey	375,367	 | Netherlands	359,861	</a>
+ </marquee>
+<hr>
+		<div class="grid-container">
+       	<div><div class="item1"><img src="bl1.jpg" class="imga"></div>
+       	<div class="item2"><h3>1. Capture By Lucy</h3>Lucy is a photographer, a mom and creator of backdrops for photography usage. Visit her blog to read about her life, her family and if you'd like to work with her. All of her backdrops are photos that she herself has taken and then had printed.</div>
+       </div><br>
+       <div><div class="item3"><img src="bl5.jpg" class="imga"></div>
+       <div class="item4"><h3>2. The Good Trade</h3>The Good Trade is a lifestyle brand born in Los Angeles in 2014. You can read a ton of their articles on the site that all revolve and echo living an intentional lifestyle.</div>
+   </div><br>
+	<div>
+		<div class="item5"><img src="bl2.jpg" class="imga"></div>
+		<div class="item6"><h3>3. Benedict Evans</h3>Benedict Evans is a tech blogger with educational articles on a variety of sub-topics. You can subscribe to his newsletter for weekly updates and notes on his recent posts.</div>
+	</div><br>
+	<div>
+	<div class="item7"><img src="bl3.jpg" class="imga"></div>
+	<div class="item8"><h3>4. The Sartoralist</h3>Scott Schuman created this blog that is all about high-end fashion combined with real life. He's been featured in huge fashion magazines such as Vogue. Check out press, articles and even find books using this website.</div>
+	</div><br>
+	<div>
+	<div class="item9"><img src="bl4.jpg" class="imga"></div>
+	<div class="item10"><h3>5. Denver Darling</h3>Lifestyle and fashion blogger named Abby. She's got a bright and cheerful blog that talks about all things related to her hometown in Denver, gift buying guides and shopping her Instagram.</div>
+	</div>
+</div>
+<div class="footer">
+        		<div style="float: right;padding: 5px; border:0px solid black;height: 90px;width: 192px;color: white;background-color: #eb4034;font-family: Arial Rounded MT Bold;font-size: 18px;font-weight: bold; border-radius: 20px"><center>
+   <p id="date"></p>
+   	<p id="time"></p></center>
+</div>
+       
+        	<marquee style="background-color: white; color: pink;width: cover"onmouseover="this.stop()"onmouseout="this.start()">
+   	<a href="ab.com" style="color: red">STOCK UPDATE: NIFTY- 50	11642.40	-28.40	-0.24 |
+SENSEX-	39614.07	-135.78	-0.34 |
+NIFTY BANK-	23900.90	-191.10	-0.79 | 
+NIFTY IT-	20916.85	39.85	0.19 | 
+S&P BSE Smallcap-	14888.08	-5.01	-0.03</a>
+ </marquee>
+        </div>
+</body>
+</html>
