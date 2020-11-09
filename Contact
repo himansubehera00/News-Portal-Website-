@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+	<link rel="stylesheet" type="text/css" href="navig.css">
+	<style>
+		.grid-container{display:grid;grid-template-areas: 
+			'h1'
+			'h2'
+			'h3 h4 h5 h6'
+			'h7 h8 h9 h10';
+			grid-gap:2px;
+			padding: 5px;
+			background: transparent;
+			height:200px;
+			width: 270px; 
+			}
+			.grid-container>div{
+				height: 200px;
+				width: 270px;
+				background-color: transparent;
+				text-align: center;
+				padding:2px;
+				font-size:12px;
+				border-radius: 20px;
+			}
+			.item1{grid-area: h1}
+			.item2{grid-area: h2}
+			.item3{grid-area: h3}
+			.item4{grid-area: h4}
+			.item5{grid-area: h5;}
+			.item6{grid-area: h6;}
+			.item7{grid-area: h7;}
+			.item8{grid-area: h8;}
+			.item9{grid-area: h9;}
+			.item10{grid-area: h10;}
+
+	</style>
+	<script type="text/javascript">
+    window.onload = setInterval(clock,1000);
+
+    function clock()
+    {
+      var d = new Date();
+      
+      var date = d.getDate();
+      
+      var month = d.getMonth();
+      var montharr =["Jan","Feb","Mar","April","May","June","July","Aug","Sep","Oct","Nov","Dec"];
+      month=montharr[month];
+      
+      var year = d.getFullYear();
+      
+      var day = d.getDay();
+      var dayarr =["Sun","Mon","Tues","Wed","Thurs","Fri","Sat"];
+      day=dayarr[day];
+      
+      var hour =d.getHours();
+      var min = d.getMinutes();
+      var sec = d.getSeconds();
+    if (hour<10) {hour="0"+hour};
+    if (min<10) {min="0"+min};
+    if (sec<10) {sec="0"+sec};
+      document.getElementById("date").innerHTML=day+" "+date+" "+month+" "+year;
+      document.getElementById("time").innerHTML=hour+":"+min+":"+sec;
+    }
+  </script>
+</head>
+<body>
+	<div style="margin: 0px; background-color: brown; height: 50px; width: cover;" class="right">&nbsp;&nbsp;<center><div style="background-color: brown; height: 50px; width: 458px" class="head">
+		The Sunrise<sup>&reg;</sup>
+	</div></center>
+		</div>
+	<ul>
+		<li><a href="navig.html">Home</a></li>
+		<li><a href="bolglogin.html">Blog</a></li>
+		<li><a href="about.html">About</a></li>
+		<li class="active"><a href="suncontact.html">Contact</a></li>
+		<li class="log"><a href="bolglogin.html">Login/Sign Up</a></li>
+	</ul><hr>
+		<marquee style="color: red;width: cover;"onmouseover="this.stop()"onmouseout="this.start()">
+   	<a href="ab.com" style="color: red">COVID 19 Update: World	46,525,182	|	USA	9,405,247 | India	8,196,332 | Brazil	5,535,605 | Russia	1,636,781 | France	1,367,625 | Spain	1,264,517	| Argentina	1,166,924 | Colombia	1,074,184 | UK	1,011,660 | Mexico	924,962	 | Peru	902,503 | South Africa	725,452	 | Italy	679,430 | Iran	620,491 | Germany	534,315 | Chile	510,256	 | Iraq	475,288	 | 	Belgium	429,229 | Indonesia	412,784 | 	Bangladesh	409,252	 | Ukraine	395,440 | Philippines	383,113 | Poland	379,902 | Turkey	375,367	 | Netherlands	359,861	</a>
+ </marquee>
+<hr>	
+		<div class="grid-container">
+			<div style="height: 200px;width: 1100px;justify-content: center;">
+       	<div><div class="item1"><img src="b1.jpg" class="imge"></div>
+       	<div class="item2"><h3>Main Branch Office</h3>College Chowk, Dhenkanal, Odisha 759001<br>Ph: 06762-223350</div>
+       </div></div><br>
+       <div style="height: 200px;width: 1100px;display: flex;justify-content: center;grid-gap: 5px">
+       <div><div class="item3"><img src="b2.jpg" class="imge"></div>
+       <div class="item4"><h3>Eastern Zone Office</h3>SIRD Campus, Unit 8, Bhubaneswar, Odisha 751003<br>Ph:06724-225698</div>
+   </div><br>
+	<div>
+		<div class="item5"><img src="b6.jpg" class="imge"></div>
+		<div class="item6"><h3>Western Zone Office</h3>Bandra East, Mumbai, Maharashtra 400051<br>Ph:03256-523698</div>
+	</div><br>
+	<div>
+	<div class="item7"><img src="b4.jpg" class="imge"></div>
+	<div class="item8"><h3>Northern Zone Office</h3>Gandhi Marg, Barakhamba, New Delhi, Delhi 110001<br>Ph:02356-895463</div>
+	</div><br>
+	<div>
+	<div class="item9"><img src="b5.jpg" class="imge"></div>
+	<div class="item10"><h3>Sourthen Zone Office</h3>Indiranagar, Bengaluru, Karnataka 560038<br>Ph:02356-987456</div>
+	</div>
+</div></div>
+	<div class="footer">
+        		<div style="float: right;padding: 5px; border:0px solid black;height: 90px;width: 192px;color: white;background-color: #eb4034;font-family: Arial Rounded MT Bold;font-size: 18px;font-weight: bold; border-radius: 20px"><center>
+   <p id="date"></p>
+   	<p id="time"></p></center>
+</div>
+       
+        	<marquee style="background-color: white; color: pink;width: cover"onmouseover="this.stop()"onmouseout="this.start()">
+   	<a href="ab.com" style="color: red">STOCK UPDATE: NIFTY- 50	11642.40	-28.40	-0.24 |
+SENSEX-	39614.07	-135.78	-0.34 |
+NIFTY BANK-	23900.90	-191.10	-0.79 | 
+NIFTY IT-	20916.85	39.85	0.19 | 
+S&P BSE Smallcap-	14888.08	-5.01	-0.03</a>
+ </marquee>
+        </div>
+</body>
+</html>
