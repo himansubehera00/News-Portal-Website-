@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="navig.css">
+	<style>
+		.grid-container{display:grid;grid-template-areas: 
+			'h1 h2 h3 h4'
+			'h5 h6 h7 h8';
+			grid-gap:1px;
+			padding: 5px;
+			background: transparent;
+			height:220px;
+			width: 270px; }
+			.grid-container>div{
+				height: 210px;
+				width: 270px;
+				background-color: transparent;
+				text-align: center;
+				padding:2px;
+				font-size:10px;
+				border-radius: 20px;
+			}
+			.item1{grid-area: h1}
+			.item2{grid-area: h2}
+			.item3{grid-area: h3}
+			.item4{grid-area: h4}
+			.item5{grid-area: h5;font-size: 20px;text-decoration:none;}
+			.item6{grid-area: h6;font-size: 20px;text-decoration:none;}
+			.item7{grid-area: h7;font-size: 20px;text-decoration:none;}
+			.item8{grid-area: h8;font-size: 20px;text-decoration:none;}
+
+	</style>
+	<script type="text/javascript">
+    window.onload = setInterval(clock,1000);
+
+    function clock()
+    {
+      var d = new Date();
+      
+      var date = d.getDate();
+      
+      var month = d.getMonth();
+      var montharr =["Jan","Feb","Mar","April","May","June","July","Aug","Sep","Oct","Nov","Dec"];
+      month=montharr[month];
+      
+      var year = d.getFullYear();
+      
+      var day = d.getDay();
+      var dayarr =["Sun","Mon","Tues","Wed","Thurs","Fri","Sat"];
+      day=dayarr[day];
+      
+      var hour =d.getHours();
+      var min = d.getMinutes();
+      var sec = d.getSeconds();
+    if (hour<10) {hour="0"+hour};
+    if (min<10) {min="0"+min};
+    if (sec<10) {sec="0"+sec};
+      document.getElementById("date").innerHTML=day+" "+date+" "+month+" "+year;
+      document.getElementById("time").innerHTML=hour+":"+min+":"+sec;
+    }
+  </script>
+</head>
+<body>
+	<div style="margin: 0px; background-color: brown; height: 50px; width: cover;" class="right">&nbsp;&nbsp;<center><div style="background-color: brown; height: 50px; width: 458px" class="head">
+		The Sunrise<sup>&reg;</sup>
+	</div></center>
+		</div>
+	<ul>
+		<li class="active" ><a href="navig.html">Home</a></li>
+		<li><a href="bolglogin.html"target="_blank">Blog</a></li>
+		<li><a href="about.html"target="_blank">About</a></li>
+		<li><a href="suncontact.html"target="_blank">Contact</a></li>
+		<li class="log"><a href="bolglogin.html"target="_blank">Login/Sign Up</a></li>
+	</ul><hr>
+		<marquee style="color: red;width: cover;"onmouseover="this.stop()"onmouseout="this.start()">
+   	<a href="ab.com" style="color: red">COVID 19 Update: World	46,525,182	|	USA	9,405,247 | India	8,196,332 | Brazil	5,535,605 | Russia	1,636,781 | France	1,367,625 | Spain	1,264,517	| Argentina	1,166,924 | Colombia	1,074,184 | UK	1,011,660 | Mexico	924,962	 | Peru	902,503 | South Africa	725,452	 | Italy	679,430 | Iran	620,491 | Germany	534,315 | Chile	510,256	 | Iraq	475,288	 | 	Belgium	429,229 | Indonesia	412,784 | 	Bangladesh	409,252	 | Ukraine	395,440 | Philippines	383,113 | Poland	379,902 | Turkey	375,367	 | Netherlands	359,861	</a>
+ </marquee>
+<hr>
+ 	<div style="float: right;margin-right: 10px;width: 200px">
+         	<label for="language">Change Language</label><br>
+            <a href="navighindi.html"><u>
+हिंदी</u></a> | 
+            <a href="navigodia.html"><u>ଓଡିଆ</u></a>
+            <br>
+      <br><br><div style="border:0px solid black;text-align: center;padding: 0px;background-color:#f2ebeb;"><div style="float: left;margin-left: 3px;margin-top: 3px; border:0px solid black;box-shadow: 2px 0 5px 0 rgba(0,0,0,0.5);border-radius: 3px">Ad</div><br><img src="Appypie.png"><br><p class="blink">Try Appy pie for Free</p></div>
+        </div>
+       <div style="padding: 1px;border:0px; width: 1100px;height: 35px;font-family: Copperplate Gothic Bold;background-color: #eb4034;color: white;border-radius: 20px"><p class="bli">
+       	Breaking News</p>
+       </div>
+       <div class="grid-container">
+       	<div class="zoom"><div class="item1"><img src="imrankhan.jpg" class="imge"></div>
+       	<div class="item5"><a href="#">'Bid to camouflage illegal occupation': India slams Pak's move to alter Gilgit-Baltistan's status</a></div>
+       </div>
+       <div class="zoom"><div class="item2"><img src="ppekit.jpg" class="imge"></div>
+       <div class="item6"><a href="#">Mumbai: Free Covid testing at 244 locations</a></div>
+   </div>
+	<div class="zoom">
+		<div class="item3"><img src="handcup.jpg" class="imge"></div>
+		<div class="item7"><a href="#">Hyderabad: Dubbak BJP candidate's kin nabbed while transport...</a></div>
+	</div>
+	<div class="zoom">
+	<div class="item4"><img src="smriti.jpg" class="imge"></div>
+	<div class="item8"><a href="#">Union minister Smriti Irani tests positive for Covid-19</a></div>
+	</div>
+</div>
+		<img src="biden.jpg" class="imge">
+		<p>Politics pit neighbor against neighbor as Election Day looms
+Across the United States, political signs have been set ablaze, cars have been vandalized and shouting matches<br> have proliferated in the waning days of the most toxic election season in more than half a century.
+By Annie Gowen and Tim Craig</p>
+
+<img src="karen.png" class="imge">
+		<p>A week in Philadelphia: A death, protests, pandemic and election mayhem
+The largest city in the battleground state of Pennsylvania is where 2020’s issues and demons were<br> on full display.
+By Karen Heller</p>
+
+<img src="sikh.png" class="imge">
+		<p>Sikh holy men, known as 'Panj Pyare', hold swords as they escort Sikh priest Jagtar Singh (C) carrying the Guru Granth Sahib, the central religious text of Sikhism, during a<br> religious procession ahead of the birth anniversary of the fourth Sikh Guru Ramdas, at the Golden Temple in Amritsar on October 31, 2020.Sikh devotees carry the Palki<br> Sahib with the Guru Granth Sahib, the central religious text of Sikhism, during a religious procession ahead of the birth anniversary of the fourth Sikh Guru Ramdas, at the<br> Golden Temple in Amritsar </p>
+
+<img src="jem.png" class="imge">
+		<p>At least two terrorists of Jaish-e-Mohammed (JeM) were killed in an encounter in Budgam district of Jammu and Kashmir. The gunbattle between terrorists and security<br> forces started in Mouchwa area of Budgam on Tuesday. According to the police, the bodies of two terrorists were recovered from the encounter site and search operations<br> have been carried out for those who fled from there. Before the gunbattle started, a joint team of Srinagar Police, Budgam Police, and Army's 50 Rashtriya Rifles warned<br> terrorists and asked them to surrender. As soon as the security personnel approached them, the terrorists opened fire indiscriminately. In retaliation, security forces gunned<br> down two terrorists. This is the second encounter of this week, earlier, a terrorist was neutralised on Tuesday, while another surrendered in South Kashmir's Tral region.</p>
+
+<img src="us.png" class="imge">
+		<p>The United States is developing a ''super duper missile'' to outpace military rivals including China and Russia, according to US President Donald Trump.</p>	
+		<div style="background-color: white;height: 50px"></div>
+        <div class="footer">
+        		<div style="float: right;padding: 5px; border:0px solid black;height: 90px;width: 192px;color: white;background-color: #eb4034;font-family: Arial Rounded MT Bold;font-size: 18px;font-weight: bold; border-radius: 20px"><center>
+   <p id="date"></p>
+   	<p id="time"></p></center>
+</div>
+        	<marquee style="background-color: white; color: pink;width: cover"onmouseover="this.stop()"onmouseout="this.start()">
+   	<a href="ab.com" style="color: red">STOCK UPDATE: NIFTY- 50	11642.40	-28.40	-0.24 |
+SENSEX-	39614.07	-135.78	-0.34 |
+NIFTY BANK-	23900.90	-191.10	-0.79 | 
+NIFTY IT-	20916.85	39.85	0.19 | 
+S&P BSE Smallcap-	14888.08	-5.01	-0.03</a>
+ </marquee>
+        </div>
+</body>
+</html>
